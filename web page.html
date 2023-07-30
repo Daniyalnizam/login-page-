@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .social-container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .social-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #4267B2; /* Facebook blue */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .twitter-btn {
+            background-color: #1DA1F2; /* Twitter blue */
+        }
+
+        .google-btn {
+            background-color: #DB4437; /* Google red */
+        }
+
+        .social-btn:hover {
+            opacity: 0.8;
+        }
+
+        .social-btn img {
+            width: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .login-or {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="social-container">
+        <h2>Social Media Login</h2>
+        <button class="social-btn" onclick="loginWithFacebook()">
+            <img src="https://via.placeholder.com/20?text=FB" alt="Facebook logo">Login with Facebook
+        </button>
+        <button class="social-btn twitter-btn" onclick="loginWithTwitter()">
+            <img src="https://via.placeholder.com/20?text=TW" alt="Twitter logo">Login with Twitter
+        </button>
+        <button class="social-btn google-btn" onclick="loginWithGoogle()">
+            <img src="https://via.placeholder.com/20?text=GO" alt="Google logo">Login with Google
+        </button>
+        <p class="login-or">or</p>
+        <!-- Your regular login form can be added here -->
+    </div>
+
+    <script>
+        function loginWithFacebook() {
+            // Handle Facebook login here
+            alert("Login with Facebook");
+        }
+
+        function loginWithTwitter() {
+            // Handle Twitter login here
+            alert("Login with Twitter");
+        }
+
+        function loginWithGoogle() {
+            // Handle Google login here
+            alert("Login with Google");
+        }
+    </script>
+</body>
+</html>
